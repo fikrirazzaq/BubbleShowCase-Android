@@ -1,6 +1,6 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-apply from: 'keystore.gradle'
+//apply from: 'keystore.gradle'
 
 //This file was created following instructions from: https://notes.devlabs.bg/beginners-guide-for-publishing-a-kotlin-library-to-jcenter-41272bfc214
 
@@ -15,7 +15,7 @@ group = groupId
 
 bintray{
     user = 'laboratorioec'
-    key = bintray_api_key //Defined in keystore.gradle file
+//    key = bintray_api_key //Defined in keystore.gradle file
     configurations = ['archives']
     publish = true
     override = true

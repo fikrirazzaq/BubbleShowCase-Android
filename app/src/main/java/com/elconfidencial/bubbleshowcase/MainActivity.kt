@@ -1,13 +1,16 @@
 package com.elconfidencial.bubbleshowcase
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
-import android.support.v7.view.menu.ActionMenuItemView
-import android.view.Menu
-import android.view.MenuItem
+import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.buttonArrowLeftShowCase
+import kotlinx.android.synthetic.main.activity_main.buttonArrowRightShowCase
+import kotlinx.android.synthetic.main.activity_main.buttonColorShowCase
+import kotlinx.android.synthetic.main.activity_main.buttonEventListener
+import kotlinx.android.synthetic.main.activity_main.buttonSequence
+import kotlinx.android.synthetic.main.activity_main.buttonSimpleShowCase
+import kotlinx.android.synthetic.main.activity_main.buttonTextSizeShowCase
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,14 +34,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun getSimpleShowCaseBuilder(): BubbleShowCaseBuilder{
         return BubbleShowCaseBuilder(this)
-                .title("Welcome!!!")
                 .description("This is a simple BubbleShowCase with default values.")
                 .targetView(buttonSimpleShowCase)
     }
 
     private fun getCustomColorShowCaseBuilder(): BubbleShowCaseBuilder{
         return BubbleShowCaseBuilder(this)
-                .title("Custom your bubble style!")
                 .description("It is possible to change the text color, background ... and you can even add an image into your bubble.")
                 .backgroundColor(ContextCompat.getColor(this, R.color.colorBlueGray))
                 .image(ContextCompat.getDrawable(this, R.drawable.ic_color)!!)

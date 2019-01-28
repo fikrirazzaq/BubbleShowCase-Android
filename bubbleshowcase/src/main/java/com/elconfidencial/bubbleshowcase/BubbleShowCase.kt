@@ -180,7 +180,7 @@ class BubbleShowCase(builder: BubbleShowCaseBuilder){
                         mBubbleShowCaseListener?.onBubbleClick(this@BubbleShowCase)
                     }
 
-                    override fun onCloseActionImageClick() {
+                    override fun onCloseActionOkClick() {
                         dismiss()
                         mBubbleShowCaseListener?.onCloseActionImageClick(this@BubbleShowCase)
                     }
