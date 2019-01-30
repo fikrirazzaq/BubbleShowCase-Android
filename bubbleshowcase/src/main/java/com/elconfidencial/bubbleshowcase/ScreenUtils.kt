@@ -22,7 +22,7 @@ object ScreenUtils {
         val wm = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
         val display = wm.defaultDisplay
         val size = Point()
-        display.getSize(size)
+        display.getRealSize(size)
         return size.y
     }
 
