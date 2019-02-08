@@ -7,8 +7,7 @@
     android:layout_marginEnd="20dp"
     android:layout_marginLeft="36dp"
     android:layout_marginRight="20dp"
-    android:layout_marginStart="36dp"
-    android:maxWidth="420dp">
+    android:layout_marginStart="36dp">
 
     <ImageView
         android:id="@+id/imageViewShowCase"
